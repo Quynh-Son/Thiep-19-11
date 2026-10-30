@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="vi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#fbf6ee">
+<title>Gửi anh, người em thương</title>
+<style>
+:root{--cream:#fbf6ee;--paper:#fffdf9;--wine:#743d43;--text:#58484a;--muted:#9a7779;--rose:#bd8588}
+*{box-sizing:border-box}
+body{margin:0;min-height:100vh;display:flex;align-items:center;justify-content:center;padding:24px 14px;background:radial-gradient(circle at 10% 0%,#f8e9e4 0,transparent 34%),radial-gradient(circle at 100% 100%,#f5e2df 0,transparent 38%),var(--cream);font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Noto Sans",Arial,sans-serif;color:var(--text)}
+.card{width:min(100%,455px);background:var(--paper);border:1px solid #eadcda;border-radius:24px;padding:46px 32px;box-shadow:0 18px 55px rgba(91,59,61,.12);text-align:center}
+.mini{font-size:11px;letter-spacing:.22em;color:var(--rose);font-weight:600}.heart{font-family:Arial,sans-serif;color:var(--wine);font-size:50px;line-height:1;margin:28px 0 20px}.heart.small{font-size:34px;margin:20px 0 13px}
+h1,h2{color:var(--wine);font-weight:500;line-height:1.35;margin:0 auto}h1{font-size:28px}h2{font-size:25px}.sub{font-size:15.5px;color:var(--muted);line-height:1.7;margin:17px auto 29px;max-width:320px}
+button{font:inherit;background:var(--wine);color:#fff;border:0;border-radius:28px;padding:13px 23px;cursor:pointer;box-shadow:0 8px 20px rgba(116,61,67,.18)}button:hover{background:#66353b}button:focus-visible{outline:3px solid #dcaeb1;outline-offset:3px}
+.rule{height:1px;width:42px;background:#d9b7b6;margin:21px auto 26px}#letter p{font-size:15.8px;line-height:1.85;margin:18px 0;text-align:left}.quote{margin:25px 0;padding:19px 15px;border-top:1px solid #ead9d7;border-bottom:1px solid #ead9d7;color:var(--wine);font-size:16px;line-height:1.9;font-weight:500}.love{margin-top:31px;color:var(--wine);font-size:19px;font-weight:600}.show{animation:appear .7s ease both}@keyframes appear{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:none}}@media(max-width:360px){.card{padding:38px 22px}h1{font-size:25px}h2{font-size:23px}#letter p{font-size:15px}}
+</style>
+</head>
+<body>
+<main class="card">
+<section id="cover">
+<div class="mini">19 · 11</div><div class="heart">♡</div>
+<h1>Gửi anh, người em thương</h1>
+<p class="sub">Có một lời nhắn nhỏ em muốn dành riêng cho anh.</p>
+<button type="button" id="openBtn">Mở lời nhắn ♥</button>
+</section>
+<section id="letter" hidden>
+<div class="mini">HAPPY MEN'S DAY · 19/11</div><div class="heart small">♡</div>
+<h2>Gửi anh, người em thương</h2><div class="rule"></div>
+<p>Chúc anh luôn mạnh khỏe, vui vẻ, bình an và thật nhiều may mắn. 🍀</p>
+<p>Mong cho tất cả những cố gắng của anh đều được đền đáp xứng đáng và những điều tốt đẹp nhất sẽ đến với anh. ✨</p>
+<p>Nếu có những ngày anh cảm thấy mệt mỏi, áp lực hay chẳng muốn nói gì cả, cũng không sao nhé.</p>
+<p>Anh không cần phải lúc nào cũng mạnh mẽ đâu.</p>
+<div class="quote">Mệt thì dựa vào em một chút.<br>Vui thì kể em nghe.<br>Buồn cũng kể em nghe.</div>
+<p>Vì dù thế nào, em vẫn muốn được ở đây, lắng nghe, chia sẻ và đồng hành cùng anh.</p>
+<div class="love">Thương anh rất nhiều. ♥</div>
+</section>
+</main>
+<script>
+const cover=document.getElementById('cover');const letter=document.getElementById('letter');document.getElementById('openBtn').addEventListener('click',()=>{cover.hidden=true;letter.hidden=false;letter.classList.add('show');});
+</script>
+</body>
+</html>
